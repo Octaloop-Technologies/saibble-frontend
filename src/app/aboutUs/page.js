@@ -3,7 +3,7 @@ import React from 'react'
 export default function Page() {
     return (
         <div>
-            about us usss
+            about us usss..
         </div>
     )
 }

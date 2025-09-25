@@ -1,21 +1,10 @@
-import Button from "@/components/shared/button";
-import Input from "@/components/shared/input";
-import React from "react";
+import React from 'react'
+import LandingPage from './landing/page'
 
-export default function Home() {
+export default function Page() {
   return (
-    <>
-      <section className="h-[300vh]  scrollbar-hidden">
-        <div className="container">
-          <Input
-            label="First Name"
-            placeholder="Enter your name"
-            errorMessage={10}
-            type="date"
-          />
-          <Button text="red" className="text-9xl" />
-        </div>
-      </section>
-    </>
-  );
+    <div  >
+      <LandingPage/>
+    </div>
+  )
 }
