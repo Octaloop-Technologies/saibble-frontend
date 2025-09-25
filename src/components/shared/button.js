@@ -34,7 +34,7 @@ const Button = ({
   console.log(loading);
   return (
     <button
-      className={`min-w-24 cursor-pointer text-base font-medium rounded-md transition capitalize duration-150 ease-in-out p-2.5 bg-green-500 ${
+      className={`min-w-24 cursor-pointer text-base font-medium rounded-[11px] transition capitalize duration-150 ease-in-out p-2.5 bg-secondary ${
         loading && "!cursor-not-allowed"
       } ${className}`}
       style={buttonStyle}
