@@ -24,13 +24,19 @@ const cards = [
   },
 ];
 
-export const Card = ({ icon, title, desc,  itemsPosition = "center",textPosition = "center" }) => (
+export const Card = ({ icon, title, desc,  itemsPosition = "center",textPosition = "center" , imageSize="54px", titleSize="xl", paraFont="base"}) => (
   <div
-    className={`bg-white rounded-[30px] py-9.5 px-7 flex flex-col z-50 justify-center items-${itemsPosition}`}
+    className={`bg-white rounded-[30px] py-9.5 px-7 w-full flex flex-col z-50 justify-center items-${itemsPosition}`}
   style={{ boxShadow: "0 4px 40px 0 rgba(0, 0, 0, 0.08)" }} >
-    <Image src={icon} width={54} height={54} alt={title} />
-    <p className="text-xl!  text-black font-semibold pb-3 pt-4.5">{title}</p>
-    <p className={`text-base!  text-black/70 capitalize text-${textPosition}`}>{desc}</p>
+   <Image 
+  src={icon} 
+  alt={title} 
+  width={parseInt(imageSize)} 
+  height={parseInt(imageSize)} 
+  style={{ width: imageSize, height: imageSize }} 
+/>
+    <p className={`text-${titleSize}  text-black font-semibold pb-3 pt-4.5`}>{title}</p>
+    <p className={`text-${paraFont}  text-black/70 capitalize text-${textPosition}`}>{desc}</p>
   </div>
 );
 

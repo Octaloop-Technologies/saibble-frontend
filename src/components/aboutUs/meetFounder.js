@@ -24,7 +24,7 @@ const MeetFounder = () => {
                 </div>
                 <div className='flex gap-5.5 pt-15 pb-7.5'>
                     <Button text="Schedule A Consultation" className="max-w-[250px] w-full"/>
-                      <Button text="View LinkedIn Profile" className="max-w-[250px] w-full"/>
+                      <Button text="View LinkedIn Profile" className="max-w-[250px] w-full cursor-pointer"/>
                 </div>
                 <div className='h-px bg-black/10 mb-5'/>
                 <p className='text-black/70 text-sm! '>Certifications & Expertise:</p>
